@@ -1,172 +1,172 @@
 {
-    "books": [
-        {
-            "title": "Harry Potter and the Deathly Hallows",
-            "author": "J.K. Rowling",
-            "genre": "Fantasy",
-            "publicationDate": "2007-07-21",
-            "reviews": [
-                "The final installment of the Harry Potter series is a breathtaking conclusion that will leave you in awe. A truly remarkable achievement!",
-                "Rowling delivers a satisfying and emotionally charged ending that ties up loose ends and brings the story full circle. A monumental finale!",
-                "The Deathly Hallows is a thrilling and heart-wrenching conclusion filled with sacrifices, revelations, and epic battles. A triumph of storytelling!",
-                "This book is an emotional roller coaster, with moments of heartbreak and triumph that will stay with you long after you finish reading. A masterpiece!",
-                "Rowling's ability to create a rich and immersive world comes to its apex in this final book. An unforgettable conclusion to an extraordinary series!"
-            ],
-            "image": "https://i.ibb.co/wWvR4JX/hp-7.jpg"
-        },
-        {
-            "title": "Harry Potter and the Half-Blood Prince",
-            "author": "J.K. Rowling",
-            "genre": "Fantasy",
-            "publicationDate": "2005-07-16",
-            "reviews": [
-                "The penultimate book in the series is filled with revelations and heartbreak. Rowling's storytelling reaches new heights. A masterpiece!",
-                "The Half-Blood Prince is a captivating and emotionally charged journey that sets the stage for the epic conclusion. Gripping from start to finish!",
-                "Rowling delves deeper into the characters' pasts and intertwines their fates in surprising ways. A stunning addition to the series!",
-                "The plot thickens, the darkness deepens, and readers are left reeling from the twists and turns. Rowling's brilliance shines through!",
-                "This book is a testament to Rowling's ability to weave a complex narrative and keep readers hooked until the very end. Simply outstanding!"
-            ],
-            "image": "https://i.ibb.co/0nn8RLL/hp-6.jpg"
-        },
-        {
-            "title": "Harry Potter and the Order of the Phoenix",
-            "author": "J.K. Rowling",
-            "genre": "Fantasy",
-            "publicationDate": "2003-06-21",
-            "reviews": [
-                "The fifth book is a game-changer, delving into darker themes and showcasing the resilience of our beloved characters. Breathtaking!",
-                "Rowling's writing reaches new heights with this emotionally charged and action-packed installment. A tour de force!",
-                "The Order of the Phoenix is a roller coaster of emotions, keeping readers on the edge of their seats until the very end. Unforgettable!",
-                "This book explores the complexities of teenagehood and the cost of standing up against injustice. A powerful addition to the series!",
-                "Rowling's ability to weave an intricate plot and develop characters shines through. This book left me speechless!"
-            ],
-            "image": "https://i.ibb.co/f8sshT3/hp-5.jpg"
-        },
-        {
-            "title": "Harry Potter and the Goblet of Fire",
-            "author": "J.K. Rowling",
-            "genre": "Fantasy",
-            "publicationDate": "2000-07-08",
-            "reviews": [
-                "The fourth book takes the series to new heights with its intricate plot and stunning revelations. A triumph!",
-                "Rowling masterfully balances the darker tone of the story while staying true to the magic and wonder of Hogwarts. A must-read!",
-                "The Triwizard Tournament brings fierce competition and unexpected dangers. This book left me breathless!",
-                "The character development and the exploration of Harry's struggles make this a standout installment. A gripping read!",
-                "The stakes are raised, the dangers are real, and the emotions run deep. Rowling's storytelling is pure brilliance!"
-            ],
-            "image": "https://i.ibb.co/WBwtfZ0/hp-4.jpg"
-        },
-        {
-            "title": "Harry Potter and the Prisoner of Azkaban",
-            "author": "J.K. Rowling",
-            "genre": "Fantasy",
-            "publicationDate": "1999-07-08",
-            "reviews": [
-                "The third book introduces new characters and expands the magical world even further. A thrilling and emotional ride!",
-                "Rowling's storytelling continues to mature, tackling deeper themes while keeping readers on the edge of their seats. Phenomenal!",
-                "The time-travel aspect adds a whole new level of complexity to the story. A standout entry in the series!",
-                "I couldn't wait to uncover the secrets surrounding the Prisoner of Azkaban. Gripping and full of surprises!",
-                "Rowling weaves a tale of friendship, loyalty, and redemption, leaving readers hungry for more. Another masterpiece!"
-            ],
-            "image": "https://i.ibb.co/rsD9HZG/hp-3.jpg"
-        },
-        {
-            "title": "Harry Potter and the Chamber of Secrets",
-            "author": "J.K. Rowling",
-            "genre": "Fantasy",
-            "publicationDate": "1998-07-02",
-            "reviews": [
-                "The second installment of the Harry Potter series deepens the magical world and delivers another thrilling adventure. Fantastic!",
-                "Rowling's storytelling prowess shines through, with a plot that keeps you guessing until the very end. A worthy sequel.",
-                "I loved revisiting Hogwarts and watching Harry and his friends uncover the secrets within the Chamber. A fantastic read!",
-                "The magical creatures and the mystery surrounding the Chamber make this book a delight to read. A page-turner!",
-                "Another enchanting and engrossing book that continues to captivate readers. Rowling's imagination knows no bounds."
-            ],
-            "image": "https://i.ibb.co/9n93P2p/hp-2.jpg"
-        },
-        {
-            "title": "Harry Potter and the Philosopher's Stone",
-            "author": "J.K. Rowling",
-            "genre": "Fantasy",
-            "publicationDate": "1997-06-26",
-            "reviews": [
-                "A magical and captivating start to the beloved Harry Potter series. A must-read for all fantasy fans!",
-                "Rowling's world-building is extraordinary, and the characters are instantly endearing. A true modern classic.",
-                "The perfect blend of adventure, friendship, and mystery. I couldn't put it down!",
-                "A book that captures the imagination and takes readers on an unforgettable journey. Pure magic!",
-                "An enchanting story that appeals to readers of all ages. It sparked a lifelong love of reading for me."
-            ],
-            "image": "https://i.ibb.co/XCYzBmj/hp-1.jpg"
-        },
-        {
-            "title": "A Game of Thrones",
-            "author": "George R.R. Martin",
-            "genre": "Political Fiction",
-            "publicationDate": "1996",
-            "reviews": [
-                "A captivating start to the epic 'A Song of Ice and Fire' series. Martin's world-building and intricate plot will leave you hungry for more.",
-                "The depth of the characters and the political intrigue make this book a must-read for fantasy lovers. A thrilling journey!",
-                "Martin's storytelling is unparalleled, with complex characters and unexpected twists that keep you on the edge of your seat.",
-                "The richly detailed world and the morally gray characters make this book a standout in the fantasy genre. Prepare for an immersive experience!",
-                "A Game of Thrones sets the stage for a sprawling tale of power, betrayal, and survival. The intricate plot will keep you guessing until the very end."
-            ],
-            "image": "https://i.ibb.co/7Y3Dqnh/got-1.jpg"
-        },
-        {
-            "title": "A Clash of Kings",
-            "author": "George R.R. Martin",
-            "genre": "Political Fiction",
-            "publicationDate": "1998",
-            "reviews": [
-                "The second book intensifies the power struggles and expands the world of Westeros. Martin's masterful storytelling continues to captivate.",
-                "A Clash of Kings takes the series to new heights with its intricate plotting and unforgettable characters. A gripping read!",
-                "Martin's ability to juggle multiple storylines and keep readers engaged is astounding. The political intrigue and surprises make this book unputdownable.",
-                "This book raises the stakes and delves deeper into the complexities of the characters. A must-read for fans of the series!",
-                "The epic battles and shifting alliances make A Clash of Kings an exhilarating read. Martin's world is immersive and unpredictable."
-            ],
-            "image": "https://i.ibb.co/ZfKQVs0/got-3.jpg"
-        },
-        {
-            "title": "A Storm of Swords",
-            "author": "George R.R. Martin",
-            "genre": "Political Fiction",
-            "publicationDate": "2000",
-            "reviews": [
-                "The third book is a masterpiece of storytelling. Martin's ability to subvert expectations and weave intricate narratives is awe-inspiring.",
-                "A Storm of Swords is filled with shocking twists, heartbreaking moments, and unforgettable battles. Martin's writing is on another level.",
-                "The political maneuvering and the consequences of choices come to the forefront in this book. Prepare for an emotional roller coaster!",
-                "Martin's world feels real and dangerous, with consequences that leave a lasting impact on the characters and readers. A triumph of fantasy literature!",
-                "A Storm of Swords is an epic tale of power, loyalty, and revenge. The scope of Martin's vision is breathtaking."
-            ],
-            "image": "https://i.ibb.co/VQF2N9n/got-2.jpg"
-        },
-        {
-            "title": "A Feast for Crows",
-            "author": "George R.R. Martin",
-            "genre": "Political Fiction",
-            "publicationDate": "2005",
-            "reviews": [
-                "The fourth book takes a different approach, focusing on new characters and their journeys. Martin's world remains as rich and immersive as ever.",
-                "A Feast for Crows delves deeper into the politics and consequences of the power struggles in Westeros. Martin's character development shines.",
-                "While the pacing may be slower, Martin's prose and attention to detail make this book a rewarding read. The complexity of the world expands even further.",
-                "This book explores the aftermath of the events in the previous books and sets the stage for the grand finale. A necessary and compelling addition to the series.",
-                "A Feast for Crows continues to showcase Martin's ability to create a vast and morally ambiguous world. Prepare for more surprises and revelations."
-            ],
-            "image": "https://i.ibb.co/Bj5jZfc/got-4.jpg"
-        },
-        {
-            "title": "A Dance with Dragons",
-            "author": "George R.R. Martin",
-            "genre": "Political Fiction",
-            "publicationDate": "2011",
-            "reviews": [
-                "The fifth book returns to the familiar characters while introducing new perspectives. Martin's writing remains top-notch, keeping readers invested.",
-                "A Dance with Dragons is a complex web of intertwining storylines and shifting allegiances. Martin's attention to detail is astounding.",
-                "The book is filled with shocking revelations and unexpected alliances. Martin continues to subvert expectations and deliver surprises.",
-                "A Dance with Dragons is a tour de force of character development, with Martin expertly exploring the depths of his richly imagined world.",
-                "Martin's ability to build suspense and create intricate plotlines shines through in this book. A must-read for fans eagerly awaiting the series' conclusion."
-            ],
-            "image": "https://i.ibb.co/KXd5ybY/got-5.jpg"
-        }
-    ]
+  "books": [
+    {
+      "title": "Harry Potter and the Deathly Hallows",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationDate": "2007-07-21",
+      "reviews": [
+        "The final installment of the Harry Potter series is a breathtaking conclusion that will leave you in awe. A truly remarkable achievement!",
+        "Rowling delivers a satisfying and emotionally charged ending that ties up loose ends and brings the story full circle. A monumental finale!",
+        "The Deathly Hallows is a thrilling and heart-wrenching conclusion filled with sacrifices, revelations, and epic battles. A triumph of storytelling!",
+        "This book is an emotional roller coaster, with moments of heartbreak and triumph that will stay with you long after you finish reading. A masterpiece!",
+        "Rowling's ability to create a rich and immersive world comes to its apex in this final book. An unforgettable conclusion to an extraordinary series!"
+      ],
+      "image": "https://i.ibb.co/wWvR4JX/hp-7.jpg"
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationDate": "2005-07-16",
+      "reviews": [
+        "The penultimate book in the series is filled with revelations and heartbreak. Rowling's storytelling reaches new heights. A masterpiece!",
+        "The Half-Blood Prince is a captivating and emotionally charged journey that sets the stage for the epic conclusion. Gripping from start to finish!",
+        "Rowling delves deeper into the characters' pasts and intertwines their fates in surprising ways. A stunning addition to the series!",
+        "The plot thickens, the darkness deepens, and readers are left reeling from the twists and turns. Rowling's brilliance shines through!",
+        "This book is a testament to Rowling's ability to weave a complex narrative and keep readers hooked until the very end. Simply outstanding!"
+      ],
+      "image": "https://i.ibb.co/0nn8RLL/hp-6.jpg"
+    },
+    {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationDate": "2003-06-21",
+      "reviews": [
+        "The fifth book is a game-changer, delving into darker themes and showcasing the resilience of our beloved characters. Breathtaking!",
+        "Rowling's writing reaches new heights with this emotionally charged and action-packed installment. A tour de force!",
+        "The Order of the Phoenix is a roller coaster of emotions, keeping readers on the edge of their seats until the very end. Unforgettable!",
+        "This book explores the complexities of teenagehood and the cost of standing up against injustice. A powerful addition to the series!",
+        "Rowling's ability to weave an intricate plot and develop characters shines through. This book left me speechless!"
+      ],
+      "image": "https://i.ibb.co/f8sshT3/hp-5.jpg"
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationDate": "2000-07-08",
+      "reviews": [
+        "The fourth book takes the series to new heights with its intricate plot and stunning revelations. A triumph!",
+        "Rowling masterfully balances the darker tone of the story while staying true to the magic and wonder of Hogwarts. A must-read!",
+        "The Triwizard Tournament brings fierce competition and unexpected dangers. This book left me breathless!",
+        "The character development and the exploration of Harry's struggles make this a standout installment. A gripping read!",
+        "The stakes are raised, the dangers are real, and the emotions run deep. Rowling's storytelling is pure brilliance!"
+      ],
+      "image": "https://i.ibb.co/WBwtfZ0/hp-4.jpg"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationDate": "1999-07-08",
+      "reviews": [
+        "The third book introduces new characters and expands the magical world even further. A thrilling and emotional ride!",
+        "Rowling's storytelling continues to mature, tackling deeper themes while keeping readers on the edge of their seats. Phenomenal!",
+        "The time-travel aspect adds a whole new level of complexity to the story. A standout entry in the series!",
+        "I couldn't wait to uncover the secrets surrounding the Prisoner of Azkaban. Gripping and full of surprises!",
+        "Rowling weaves a tale of friendship, loyalty, and redemption, leaving readers hungry for more. Another masterpiece!"
+      ],
+      "image": "https://i.ibb.co/rsD9HZG/hp-3.jpg"
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationDate": "1998-07-02",
+      "reviews": [
+        "The second installment of the Harry Potter series deepens the magical world and delivers another thrilling adventure. Fantastic!",
+        "Rowling's storytelling prowess shines through, with a plot that keeps you guessing until the very end. A worthy sequel.",
+        "I loved revisiting Hogwarts and watching Harry and his friends uncover the secrets within the Chamber. A fantastic read!",
+        "The magical creatures and the mystery surrounding the Chamber make this book a delight to read. A page-turner!",
+        "Another enchanting and engrossing book that continues to captivate readers. Rowling's imagination knows no bounds."
+      ],
+      "image": "https://i.ibb.co/9n93P2p/hp-2.jpg"
+    },
+    {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationDate": "1997-06-26",
+      "reviews": [
+        "A magical and captivating start to the beloved Harry Potter series. A must-read for all fantasy fans!",
+        "Rowling's world-building is extraordinary, and the characters are instantly endearing. A true modern classic.",
+        "The perfect blend of adventure, friendship, and mystery. I couldn't put it down!",
+        "A book that captures the imagination and takes readers on an unforgettable journey. Pure magic!",
+        "An enchanting story that appeals to readers of all ages. It sparked a lifelong love of reading for me."
+      ],
+      "image": "https://i.ibb.co/XCYzBmj/hp-1.jpg"
+    },
+    {
+      "title": "A Game of Thrones",
+      "author": "George R.R. Martin",
+      "genre": "Political Fiction",
+      "publicationDate": "1996",
+      "reviews": [
+        "A captivating start to the epic 'A Song of Ice and Fire' series. Martin's world-building and intricate plot will leave you hungry for more.",
+        "The depth of the characters and the political intrigue make this book a must-read for fantasy lovers. A thrilling journey!",
+        "Martin's storytelling is unparalleled, with complex characters and unexpected twists that keep you on the edge of your seat.",
+        "The richly detailed world and the morally gray characters make this book a standout in the fantasy genre. Prepare for an immersive experience!",
+        "A Game of Thrones sets the stage for a sprawling tale of power, betrayal, and survival. The intricate plot will keep you guessing until the very end."
+      ],
+      "image": "https://i.ibb.co/7Y3Dqnh/got-1.jpg"
+    },
+    {
+      "title": "A Clash of Kings",
+      "author": "George R.R. Martin",
+      "genre": "Political Fiction",
+      "publicationDate": "1998",
+      "reviews": [
+        "The second book intensifies the power struggles and expands the world of Westeros. Martin's masterful storytelling continues to captivate.",
+        "A Clash of Kings takes the series to new heights with its intricate plotting and unforgettable characters. A gripping read!",
+        "Martin's ability to juggle multiple storylines and keep readers engaged is astounding. The political intrigue and surprises make this book unputdownable.",
+        "This book raises the stakes and delves deeper into the complexities of the characters. A must-read for fans of the series!",
+        "The epic battles and shifting alliances make A Clash of Kings an exhilarating read. Martin's world is immersive and unpredictable."
+      ],
+      "image": "https://i.ibb.co/ZfKQVs0/got-3.jpg"
+    },
+    {
+      "title": "A Storm of Swords",
+      "author": "George R.R. Martin",
+      "genre": "Political Fiction",
+      "publicationDate": "2000",
+      "reviews": [
+        "The third book is a masterpiece of storytelling. Martin's ability to subvert expectations and weave intricate narratives is awe-inspiring.",
+        "A Storm of Swords is filled with shocking twists, heartbreaking moments, and unforgettable battles. Martin's writing is on another level.",
+        "The political maneuvering and the consequences of choices come to the forefront in this book. Prepare for an emotional roller coaster!",
+        "Martin's world feels real and dangerous, with consequences that leave a lasting impact on the characters and readers. A triumph of fantasy literature!",
+        "A Storm of Swords is an epic tale of power, loyalty, and revenge. The scope of Martin's vision is breathtaking."
+      ],
+      "image": "https://i.ibb.co/VQF2N9n/got-2.jpg"
+    },
+    {
+      "title": "A Feast for Crows",
+      "author": "George R.R. Martin",
+      "genre": "Political Fiction",
+      "publicationDate": "2005",
+      "reviews": [
+        "The fourth book takes a different approach, focusing on new characters and their journeys. Martin's world remains as rich and immersive as ever.",
+        "A Feast for Crows delves deeper into the politics and consequences of the power struggles in Westeros. Martin's character development shines.",
+        "While the pacing may be slower, Martin's prose and attention to detail make this book a rewarding read. The complexity of the world expands even further.",
+        "This book explores the aftermath of the events in the previous books and sets the stage for the grand finale. A necessary and compelling addition to the series.",
+        "A Feast for Crows continues to showcase Martin's ability to create a vast and morally ambiguous world. Prepare for more surprises and revelations."
+      ],
+      "image": "https://i.ibb.co/Bj5jZfc/got-4.jpg"
+    },
+    {
+      "title": "A Dance with Dragons",
+      "author": "George R.R. Martin",
+      "genre": "Political Fiction",
+      "publicationDate": "2011",
+      "reviews": [
+        "The fifth book returns to the familiar characters while introducing new perspectives. Martin's writing remains top-notch, keeping readers invested.",
+        "A Dance with Dragons is a complex web of intertwining storylines and shifting allegiances. Martin's attention to detail is astounding.",
+        "The book is filled with shocking revelations and unexpected alliances. Martin continues to subvert expectations and deliver surprises.",
+        "A Dance with Dragons is a tour de force of character development, with Martin expertly exploring the depths of his richly imagined world.",
+        "Martin's ability to build suspense and create intricate plotlines shines through in this book. A must-read for fans eagerly awaiting the series' conclusion."
+      ],
+      "image": "https://i.ibb.co/KXd5ybY/got-5.jpg"
+    }
+  ]
 }
