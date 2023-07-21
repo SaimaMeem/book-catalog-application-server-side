@@ -40,10 +40,24 @@ const getAllBooks = async (
   if (Object.keys(filtersData).length) {
     const filteredConditions = Object.entries(filtersData)
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      .filter(([field, value]) => value)
-      .map(([field, value]) => ({
-        [field]: new RegExp(`^${value}$`, 'i'),
-      }));
+      .filter(([field, value]) => value) // Filtering to handle falsy values
+      .map(([field, value]) => {
+        if (field === 'publicationYear' || field === 'genre') {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          value = typeof value === 'string' && (value as any).split(',');
+          const check =
+            field === 'publicationYear' ? 'publicationDate' : 'genre';
+          return {
+            [check]: {
+              $in: value.map(item => new RegExp(`${item}`, 'i')),
+            },
+          };
+        } else {
+          return {
+            [field]: new RegExp(`^${value}$`, 'i'),
+          };
+        }
+      });
 
     if (filteredConditions.length > 0) {
       andConditions.push({ $and: filteredConditions });
