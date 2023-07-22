@@ -83,21 +83,21 @@ const getSingleBook = async (id: string): Promise<IBook | null> => {
   return result;
 };
 
-// const updateBook = async (
-//   id: string,
-//   person: JwtPayload | null,
-//   payload: Partial<IBook>,
-// ): Promise<IBook | null> => {
-//   const book = await Book.findById(id, { seller: 1, _id: 0 });
-//   if (book?.seller.toString() === person?.id) {
-//     const result = await Book.findByIdAndUpdate(id, payload, {
-//       new: true,
-//     }).populate('seller');
-//     return result;
-//   } else {
-//     throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
-//   }
-// };
+const updateBook = async (
+  id: string,
+  // person: JwtPayload | null,
+  payload: Partial<IBook>,
+): Promise<IBook | null> => {
+  // const book = await Book.findById(id, { seller: 1, _id: 0 });
+  // if (book?.seller.toString() === person?.id) {
+  const result = await Book.findByIdAndUpdate(id, payload, {
+    new: true,
+  });
+  return result;
+  // } else {
+  //   throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
+  // }
+};
 
 // const deleteBook = async (
 //   id: string,
@@ -117,6 +117,6 @@ export const BookService = {
   createBook,
   getAllBooks,
   getSingleBook,
-  // updateBook,
+  updateBook,
   // deleteBook,
 };
