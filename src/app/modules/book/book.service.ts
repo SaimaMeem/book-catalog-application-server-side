@@ -99,19 +99,19 @@ const updateBook = async (
   // }
 };
 
-// const deleteBook = async (
-//   id: string,
-//   person: JwtPayload | null,
-// ): Promise<IBook | null> => {
-//   const book = await Book.findById(id, { seller: 1, _id: 0 });
+const deleteBook = async (
+  id: string,
+  // person: JwtPayload | null,
+): Promise<IBook | null> => {
+  // const book = await Book.findById(id, { seller: 1, _id: 0 });
 
-//   if (book?.seller.toString() === person?.id) {
-//     const result = await Book.findByIdAndDelete(id).populate('seller');
-//     return result;
-//   } else {
-//     throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
-//   }
-// };
+  // if (book?.seller.toString() === person?.id) {
+  const result = await Book.findByIdAndDelete(id);
+  return result;
+  // } else {
+  //   throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
+  // }
+};
 
 const postReview = async (
   id: string,
@@ -137,6 +137,6 @@ export const BookService = {
   getAllBooks,
   getSingleBook,
   updateBook,
-  // deleteBook,
+  deleteBook,
   postReview,
 };
