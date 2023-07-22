@@ -113,10 +113,30 @@ const updateBook = async (
 //   }
 // };
 
+const postReview = async (
+  id: string,
+  // person: JwtPayload | null,
+  payload: Partial<IBook>,
+): Promise<IBook | null> => {
+  // const book = await Book.findById(id, { seller: 1, _id: 0 });
+  // if (book?.seller.toString() === person?.id) {
+
+  const result = await Book.findOneAndUpdate(
+    { _id: id },
+    { $push: { reviews: payload } },
+    { new: true },
+  );
+  return result;
+  // } else {
+  //   throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
+  // }
+};
+
 export const BookService = {
   createBook,
   getAllBooks,
   getSingleBook,
   updateBook,
   // deleteBook,
+  postReview,
 };

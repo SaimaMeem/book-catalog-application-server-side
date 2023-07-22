@@ -68,10 +68,24 @@ const updateBook = catchAsync(async (req: Request, res: Response) => {
 //   });
 // });
 
+const postReview = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const { reviews } = req.body;
+  // const person = req.person;
+  const result = await BookService.postReview(id, reviews);
+  sendResponse<IBook>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Review posted successfully',
+    data: result,
+  });
+});
+
 export const BookController = {
   createBook,
   getAllBooks,
   getSingleBook,
   updateBook,
   // deleteBook,
+  postReview,
 };
