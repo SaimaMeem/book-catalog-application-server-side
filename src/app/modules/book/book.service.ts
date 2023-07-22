@@ -6,19 +6,10 @@ import { bookSearchableFields } from './book.constant';
 import { IBook, IBookFilters } from './book.interface';
 import { Book } from './book.model';
 
-// const createBook = async (book: IBook): Promise<IBook | null> => {
-//   const seller = await User.findOne(
-//     { _id: book.seller, role: 'seller' },
-//     { id: 1 },
-//   );
-
-//   if (seller) {
-//     const result = await Book.create(book);
-//     return result;
-//   } else {
-//     throw new APIError(httpStatus.BAD_REQUEST, 'Invalid Seller ID');
-//   }
-// };
+const createBook = async (book: IBook): Promise<IBook | null> => {
+  const result = await Book.create(book);
+  return result;
+};
 
 const getAllBooks = async (
   filters: IBookFilters,
@@ -123,7 +114,7 @@ const getAllBooks = async (
 // };
 
 export const BookService = {
-  // createBook,
+  createBook,
   getAllBooks,
   // getSingleBook,
   // updateBook,

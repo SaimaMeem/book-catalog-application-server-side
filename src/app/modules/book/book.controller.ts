@@ -8,16 +8,16 @@ import { bookFilterableFields } from './book.constant';
 import { IBook } from './book.interface';
 import { BookService } from './book.service';
 
-// const createBook = catchAsync(async (req: Request, res: Response) => {
-//   const bookData = req.body;
-//   const result = await BookService.createBook(bookData);
-//   sendResponse(res, {
-//     statusCode: httpStatus.OK,
-//     success: true,
-//     message: 'Book created successfully',
-//     data: result,
-//   });
-// });
+const createBook = catchAsync(async (req: Request, res: Response) => {
+  const bookData = req.body;
+  const result = await BookService.createBook(bookData);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Book created successfully',
+    data: result,
+  });
+});
 
 const getAllBooks = catchAsync(async (req: Request, res: Response) => {
   const paginationOptions = pick(req.query, paginationFields);
@@ -69,7 +69,7 @@ const getAllBooks = catchAsync(async (req: Request, res: Response) => {
 // });
 
 export const BookController = {
-  // createBook,
+  createBook,
   getAllBooks,
   // getSingleBook,
   // updateBook,
