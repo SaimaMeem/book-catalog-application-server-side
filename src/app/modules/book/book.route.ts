@@ -10,7 +10,7 @@ router.post(
   BookController.createBook,
 );
 
-// router.get('/:id', BookController.getSingleBook);
+router.get('/:id', BookController.getSingleBook);
 router.get('/', BookController.getAllBooks);
 
 // router.patch(
