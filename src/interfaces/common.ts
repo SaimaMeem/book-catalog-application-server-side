@@ -16,7 +16,7 @@ export type IGenericErrorResponse = {
 };
 
 export type ILoginRequest = {
-  phoneNumber: string;
+  email: string;
   password: string;
 };
 export type ILoginResponse = {
