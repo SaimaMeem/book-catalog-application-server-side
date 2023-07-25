@@ -3,6 +3,7 @@
 // import config from '../../../config';
 // import APIError from '../../../errors/APIError';
 
+import { JwtPayload } from 'jsonwebtoken';
 import { IUser } from './user.interface';
 import { User } from './user.model';
 
@@ -25,6 +26,14 @@ const addToWishList = async (
   // }
 };
 
+const getMyProfile = async (
+  person: JwtPayload | null,
+): Promise<IUser | null> => {
+  const result = await User.findById(person?.id);
+  return result;
+};
+
 export const UserService = {
   addToWishList,
+  getMyProfile,
 };

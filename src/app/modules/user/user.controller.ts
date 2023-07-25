@@ -6,8 +6,6 @@ import { IUser } from './user.interface';
 import { UserService } from './user.service';
 
 const addToWishList = catchAsync(async (req: Request, res: Response) => {
-  console.log('============', req.body);
-
   const { id, title } = req.body;
   // const person = req.person;
   const result = await UserService.addToWishList(id, title);
@@ -18,6 +16,18 @@ const addToWishList = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+const getMyProfile = catchAsync(async (req: Request, res: Response) => {
+  const person = req.person;
+  const result = await UserService.getMyProfile(person);
+  sendResponse<IUser>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "User's information retrieved successfully",
+    data: result,
+  });
+});
+
 export const UserController = {
   addToWishList,
+  getMyProfile,
 };
