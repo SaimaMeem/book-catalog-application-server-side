@@ -6,13 +6,10 @@ import { UserController } from './user.controller';
 // import { UserValidation } from './user.validation';
 const router = express.Router();
 
-router.post(
-  '/add-to-wishlist',
-  // auth(ENUM_ROLE.BUYER, ENUM_ROLE.SELLER),
-  UserController.addToWishList,
-);
+router.post('/add-to-wishlist', auth(), UserController.addToWishList);
 
 router.get('/my-profile', auth(), UserController.getMyProfile);
+
 // router.get('/:id',
 // auth(ENUM_ROLE.ADMIN),
 //  UserController.getSingleUser);

@@ -6,9 +6,11 @@ import { IUser } from './user.interface';
 import { UserService } from './user.service';
 
 const addToWishList = catchAsync(async (req: Request, res: Response) => {
-  const { id, title } = req.body;
-  // const person = req.person;
-  const result = await UserService.addToWishList(id, title);
+  console.log(req.body, req.person);
+
+  const { bookInfo } = req.body;
+  const person = req.person;
+  const result = await UserService.addToWishList(person, bookInfo);
   sendResponse<IUser>(res, {
     statusCode: httpStatus.OK,
     success: true,
