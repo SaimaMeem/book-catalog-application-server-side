@@ -21,7 +21,6 @@ export const UserSchema = new Schema<IUser, UserModel>(
     },
     wishList: {
       bookId: { type: Schema.Types.ObjectId },
-      bookTitle: { type: String },
     },
     readingList: {
       bookId: { type: Schema.Types.ObjectId },

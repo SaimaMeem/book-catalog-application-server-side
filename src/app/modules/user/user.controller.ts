@@ -6,8 +6,6 @@ import { IUser } from './user.interface';
 import { UserService } from './user.service';
 
 const addToWishList = catchAsync(async (req: Request, res: Response) => {
-  console.log(req.body, req.person);
-
   const { bookInfo } = req.body;
   const person = req.person;
   const result = await UserService.addToWishList(person, bookInfo);

@@ -1,7 +1,6 @@
 import { Model, Types } from 'mongoose';
 export type WishList = {
   bookId: Types.ObjectId;
-  bookTitle: string;
 };
 export type ReadingList = {
   bookId: Types.ObjectId;
