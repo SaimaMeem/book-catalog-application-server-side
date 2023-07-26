@@ -16,6 +16,19 @@ const addToWishList = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
+const addToReadingList = catchAsync(async (req: Request, res: Response) => {
+  const { bookInfo } = req.body;
+  const person = req.person;
+  const result = await UserService.addToReadingList(person, bookInfo);
+  sendResponse<IUser>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Book added to reading list successfully',
+    data: result,
+  });
+});
+
 const getMyProfile = catchAsync(async (req: Request, res: Response) => {
   const person = req.person;
   const result = await UserService.getMyProfile(person);
@@ -30,4 +43,5 @@ const getMyProfile = catchAsync(async (req: Request, res: Response) => {
 export const UserController = {
   addToWishList,
   getMyProfile,
+  addToReadingList,
 };

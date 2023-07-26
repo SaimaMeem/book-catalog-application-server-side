@@ -6,11 +6,21 @@ const addToWishList = async (
   person: JwtPayload | null,
   payload: object,
 ): Promise<IUser | null> => {
-  console.log('====================', payload, person?.id);
-
   const result = await User.findOneAndUpdate(
     { _id: person?.id },
-    { $push: { wishList: payload } },
+    { $addToSet: { wishList: payload } },
+    { new: true },
+  );
+  return result;
+};
+
+const addToReadingList = async (
+  person: JwtPayload | null,
+  payload: object,
+): Promise<IUser | null> => {
+  const result = await User.findOneAndUpdate(
+    { _id: person?.id },
+    { $addToSet: { readingList: payload } },
     { new: true },
   );
   return result;
@@ -26,4 +36,5 @@ const getMyProfile = async (
 export const UserService = {
   addToWishList,
   getMyProfile,
+  addToReadingList,
 };

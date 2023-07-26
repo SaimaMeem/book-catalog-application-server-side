@@ -26,7 +26,7 @@ export const UserSchema = new Schema<IUser, UserModel>(
       bookId: { type: Schema.Types.ObjectId },
       status: {
         type: String,
-        enum: ['read soon', 'currently reading', 'finished reading'],
+        enum: ['Read Soon', 'Currently Reading', 'Finished Reading'],
       },
     },
   },
