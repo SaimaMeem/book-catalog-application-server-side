@@ -4,7 +4,7 @@ export type WishList = {
 };
 export type ReadingList = {
   bookId: Types.ObjectId;
-  status: 'read soon' | 'currently reading' | 'finished reading';
+  status: 'Read Soon' | 'Currently Reading' | 'Finished Reading';
 };
 export type IUser = {
   username: string;

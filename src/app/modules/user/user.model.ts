@@ -19,16 +19,29 @@ export const UserSchema = new Schema<IUser, UserModel>(
       required: true,
       select: false,
     },
-    wishList: {
-      bookId: { type: Schema.Types.ObjectId },
-    },
-    readingList: {
-      bookId: { type: Schema.Types.ObjectId },
-      status: {
-        type: String,
-        enum: ['Read Soon', 'Currently Reading', 'Finished Reading'],
+    wishList: [
+      {
+        bookId: {
+          type: Schema.Types.ObjectId,
+          ref: 'Book',
+          required: true,
+        },
       },
-    },
+    ],
+    readingList: [
+      {
+        bookId: {
+          type: Schema.Types.ObjectId,
+          ref: 'Book',
+          required: true,
+        },
+        status: {
+          type: String,
+          enum: ['Read Soon', 'Currently Reading', 'Finished Reading'],
+          default: 'Read Soon',
+        },
+      },
+    ],
   },
   {
     timestamps: true,

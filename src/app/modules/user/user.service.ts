@@ -33,8 +33,32 @@ const getMyProfile = async (
   return result;
 };
 
+const updateReadingListBookStatus = async (
+  id: string,
+  payload: { bookId: string; status: string },
+) => {
+  const result = await User.updateOne(
+    {
+      _id: id,
+      'readingList.bookId': payload?.bookId,
+    },
+    { $set: { 'readingList.$.status': payload?.status } },
+    { new: true },
+  );
+  return result;
+};
 export const UserService = {
   addToWishList,
   getMyProfile,
   addToReadingList,
+  updateReadingListBookStatus,
 };
+
+// const result = await User.findOneAndUpdate(
+//   {
+//     _id: new ObjectId(id),
+//     'readingList.bookId': new ObjectId(payload?.bookId),
+//   },
+//   { $set: { 'readingList.$[elem].status': payload?.status } },
+//   { arrayFilters: [{ 'elem.bookId': payload?.bookId }], new: true },
+// );

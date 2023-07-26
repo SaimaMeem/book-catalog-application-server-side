@@ -40,8 +40,24 @@ const getMyProfile = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const updateReadingListBookStatus = catchAsync(
+  async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const { bookInfo } = req.body;
+
+    const result = await UserService.updateReadingListBookStatus(id, bookInfo);
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: "User's reading list updated successfully",
+      data: result,
+    });
+  },
+);
+
 export const UserController = {
   addToWishList,
   getMyProfile,
   addToReadingList,
+  updateReadingListBookStatus,
 };
