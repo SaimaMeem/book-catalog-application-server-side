@@ -17,7 +17,7 @@ const auth = () => async (req: Request, res: Response, next: NextFunction) => {
 
     verifiedUser = jwtHelper.verifyToken(token, config.jwt.secret as Secret);
     req.person = verifiedUser;
-    console.log(verifiedUser);
+    // console.log(verifiedUser);
 
     //verify authorization
     // if (requiredRoles.length && !requiredRoles.includes(verifiedUser.role)) {
