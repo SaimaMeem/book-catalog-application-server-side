@@ -63,7 +63,7 @@ const getAllBooks = async (
   const whereConditions =
     andConditions.length > 0 ? { $and: andConditions } : {};
   const result = await Book.find(whereConditions)
-    // .populate('seller')
+    .populate('user')
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
@@ -79,57 +79,35 @@ const getAllBooks = async (
 };
 
 const getSingleBook = async (id: string): Promise<IBook | null> => {
-  const result = await Book.findById(id);
+  const result = await Book.findById(id).populate('user');
   return result;
 };
 
 const updateBook = async (
   id: string,
-  // person: JwtPayload | null,
   payload: Partial<IBook>,
 ): Promise<IBook | null> => {
-  // const book = await Book.findById(id, { seller: 1, _id: 0 });
-  // if (book?.seller.toString() === person?.id) {
   const result = await Book.findByIdAndUpdate(id, payload, {
     new: true,
   });
   return result;
-  // } else {
-  //   throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
-  // }
 };
 
-const deleteBook = async (
-  id: string,
-  // person: JwtPayload | null,
-): Promise<IBook | null> => {
-  // const book = await Book.findById(id, { seller: 1, _id: 0 });
-
-  // if (book?.seller.toString() === person?.id) {
+const deleteBook = async (id: string): Promise<IBook | null> => {
   const result = await Book.findByIdAndDelete(id);
   return result;
-  // } else {
-  //   throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
-  // }
 };
 
 const postReview = async (
   id: string,
-  // person: JwtPayload | null,
   payload: Partial<IBook>,
 ): Promise<IBook | null> => {
-  // const book = await Book.findById(id, { seller: 1, _id: 0 });
-  // if (book?.seller.toString() === person?.id) {
-
   const result = await Book.findOneAndUpdate(
     { _id: id },
     { $push: { reviews: payload } },
     { new: true },
   );
   return result;
-  // } else {
-  //   throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
-  // }
 };
 
 export const BookService = {
