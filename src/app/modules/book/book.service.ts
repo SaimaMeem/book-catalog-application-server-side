@@ -1,4 +1,7 @@
+import httpStatus from 'http-status';
+import { JwtPayload } from 'jsonwebtoken';
 import { SortOrder } from 'mongoose';
+import APIError from '../../../errors/APIError';
 import { PaginationHelper } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
@@ -85,12 +88,19 @@ const getSingleBook = async (id: string): Promise<IBook | null> => {
 
 const updateBook = async (
   id: string,
+  person: JwtPayload | null,
   payload: Partial<IBook>,
 ): Promise<IBook | null> => {
-  const result = await Book.findByIdAndUpdate(id, payload, {
-    new: true,
-  });
-  return result;
+  const book = await Book.findById(id, { user: 1, _id: 0 });
+
+  if (book?.user.toString() === person?.id) {
+    const result = await Book.findByIdAndUpdate(id, payload, {
+      new: true,
+    });
+    return result;
+  } else {
+    throw new APIError(httpStatus.FORBIDDEN, 'Forbidden');
+  }
 };
 
 const deleteBook = async (id: string): Promise<IBook | null> => {

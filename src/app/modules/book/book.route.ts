@@ -1,4 +1,5 @@
 import express from 'express';
+import auth from '../../middlewares/auth';
 import validateRequest from '../../middlewares/validateRequest';
 import { BookController } from './book.controller';
 import { BookValidation } from './book.validation';
@@ -16,10 +17,11 @@ router.get('/', BookController.getAllBooks);
 
 router.patch(
   '/:id',
+  auth(),
   validateRequest(BookValidation.updateBookZodSchema),
   BookController.updateBook,
 );
 
-router.delete('/:id', BookController.deleteBook);
+router.delete('/:id', auth(), BookController.deleteBook);
 
 export const BookRoutes = router;
